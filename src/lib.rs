@@ -11,3 +11,21 @@ pub fn gen_burn_addr(tag: &[u8]) -> monero::Address {
     let spend = CompressedEdwardsY::from_slice(spend_ristretto.as_bytes());
     Address::standard(Network::Mainnet, PublicKey { point: spend }, view)
 }
+
+pub fn burn_verify(tag: &[u8], addr: monero::Address) -> bool {
+    gen_burn_addr(tag) == addr
+}
+
+#[cfg(test)]
+#[macro_use]
+extern crate quickcheck;
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+    quickcheck! {
+        fn correctness(tag: Vec<u8>) -> bool {
+            burn_verify(&tag, gen_burn_addr(&tag))
+        }
+    }
+}
