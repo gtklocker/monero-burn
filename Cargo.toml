@@ -3,6 +3,8 @@ name = "monero-burn"
 version = "0.1.0"
 authors = ["Kostis Karantias <kkarantias@gmail.com>"]
 edition = "2018"
+description = "Generate burn addresses for Monero."
+license = "MIT"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
