@@ -1,6 +1,6 @@
 [package]
 name = "monero-burn"
-version = "0.2.0"
+version = "0.3.0"
 authors = ["Kostis Karantias <kkarantias@gmail.com>"]
 edition = "2018"
 description = "Generate burn addresses for Monero."
