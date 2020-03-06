@@ -1,4 +1,5 @@
 use monero_burn::gen_burn_addr;
+use monero::Network;
 
 use structopt::StructOpt;
 
@@ -12,5 +13,5 @@ struct Cli {
 fn main() {
     let args = Cli::from_args();
     let tag = hex::decode(&args.tag).expect("invalid tag");
-    println!("{}", gen_burn_addr(&tag))
+    println!("{}", gen_burn_addr(Network::Mainnet, &tag))
 }
