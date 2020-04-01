@@ -35,6 +35,7 @@ mod tests {
         fn valid_spend(tag: Vec<u8>) -> bool {
             gen_burn_addr(Network::Mainnet, &tag).public_spend.point.decompress().is_some()
         }
+
         fn correctness(tag: Vec<u8>) -> bool {
             burn_verify(&tag, gen_burn_addr(Network::Mainnet, &tag))
         }
