@@ -347,9 +347,9 @@ checksum = "53445de381a1f436797497c61d851644d0e8e88e6140f22872ad33a704933978"
 
 [[package]]
 name = "monero"
-version = "0.5.0"
+version = "0.7.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "36a99822d60f2bb5a4e37ab49fdee99e77f071f872ca0f9620d5ddccf7201b45"
+checksum = "7acf97e45702b7153171748605d56134f7be2239d91e532c16167931ee55f3a0"
 dependencies = [
  "base58-monero",
  "byteorder",
