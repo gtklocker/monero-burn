@@ -9,11 +9,10 @@ license = "MIT"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-curve25519-dalek = {version = "2.0", features = ["serde"]}
 hex = "0.4.1"
 monero = "0.5.0"
-sha2 = "0.8.1"
 structopt = "0.3.9"
+num-bigint = "0.2.6"
 
 [dev-dependencies]
 quickcheck = "0.9"
