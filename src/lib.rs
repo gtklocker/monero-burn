@@ -7,7 +7,7 @@ const SPEND_TAG: &str = "Whereof one cannot speak, thereof one must be silent";
 
 fn pad_u256(num: &[u8]) -> Vec<u8> {
     assert!(num.len() <= 32, "input needs to be a 256-bit bytearray");
-    let mut v: Vec<u8> = num.to_vec();
+    let mut v = num.to_vec();
     v.resize(32, 0);
     v
 }
